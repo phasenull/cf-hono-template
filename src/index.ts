@@ -5,7 +5,7 @@ export type Bindings = {
 };
 
 export default {
-	AuthWorker:ExampleWorker,
+	ExampleWorker:ExampleWorker,
 	fetch: app.fetch,
 	scheduled: async (event: ScheduledEvent, env: Bindings, ctx: ScheduledEvent) => {
 		const promise = new Promise((r)=>r(true))
